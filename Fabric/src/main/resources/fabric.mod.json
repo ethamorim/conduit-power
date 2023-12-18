@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "id": "conduitspreventdrowned",
-  "version": "3.5",
+  "version": "3.6",
 
   "name": "Conduits Prevent Drowned",
   "description": "Disables drowned zombie spawns around the player when the conduit effect is active.",
   "authors": [ "Rick South" ],
   "contact": {
-    "homepage": "https://curseforge.com/minecraft/mc-mods/conduits-prevent-drowned",
-    "sources": "https://github.com/ricksouth/serilum-mc-mod-sources/tree/main/sources/Conduits%20Prevent%20Drowned",
-    "issues": "https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Conduits%20Prevent%20Drowned"
+    "homepage": "https://serilum.com/mod/conduits-prevent-drowned",
+    "sources": "https://github.com/Serilum/Conduits-Prevent-Drowned",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Conduits%20Prevent%20Drowned"
   },
 
   "license": "All Right Reserved",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=7.3"
+    "collective": ">=7.21"
   },
 
   "custom": {
