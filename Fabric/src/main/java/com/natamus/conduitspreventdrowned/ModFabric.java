@@ -2,7 +2,7 @@ package com.natamus.conduitspreventdrowned;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.fabric.callbacks.CollectiveSpawnEvents;
-import com.natamus.conduitspreventdrowned.events.DrownedEvent;
+import com.natamus.conduitspreventdrowned.events.NearConduitSpawnEvent;
 import com.natamus.conduitspreventdrowned.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.BlockPos;
@@ -24,7 +24,7 @@ public class ModFabric implements ModInitializer {
 
 	private void loadEvents() {
 		CollectiveSpawnEvents.MOB_CHECK_SPAWN.register((Mob entity, ServerLevel world, BlockPos spawnerPos, MobSpawnType spawnReason) -> {
-			return DrownedEvent.onDrownedSpawn(entity, world, spawnerPos, spawnReason);
+			return NearConduitSpawnEvent.onEntitySpawn(entity, world, spawnerPos, spawnReason);
 		});
 	}
 

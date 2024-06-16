@@ -2,7 +2,7 @@ package com.natamus.conduitspreventdrowned;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.conduitspreventdrowned.forge.config.IntegrateForgeConfig;
-import com.natamus.conduitspreventdrowned.forge.events.ForgeDrownedEvent;
+import com.natamus.conduitspreventdrowned.forge.events.ForgeSpawnEvent;
 import com.natamus.conduitspreventdrowned.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,7 +27,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(new ForgeDrownedEvent());
+    	MinecraftForge.EVENT_BUS.register(new ForgeSpawnEvent());
 	}
 
 	private static void setGlobalConstants() {
