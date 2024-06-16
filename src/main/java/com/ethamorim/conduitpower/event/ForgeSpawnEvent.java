@@ -21,7 +21,6 @@ public class ForgeSpawnEvent {
 			return;
 		}
 		if (!NearConduitSpawnEvent.onEntitySpawn(entity, (ServerLevel) level, null, e.getSpawnType())) {
-			System.out.println("Cancelling spawn: " + entity.getName());
 			e.setSpawnCancelled(true);
 			e.setCanceled(true);
 		}
