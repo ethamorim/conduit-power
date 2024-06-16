@@ -1,9 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.natamus.conduitspreventdrowned.forge.mixin",
+  "package": "com.ethamorim.conduitpower.forge.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "conduitspreventdrowned_forge.refmap.json",
+  "refmap": "conduitpower_forge.refmap.json",
   "mixins": [
 
   ],

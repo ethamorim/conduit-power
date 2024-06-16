@@ -1,6 +1,5 @@
-package com.natamus.conduitspreventdrowned.forge.events;
+package com.ethamorim.conduitpower.event;
 
-import com.natamus.conduitspreventdrowned.events.NearConduitSpawnEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.level.Level;
@@ -22,6 +21,7 @@ public class ForgeSpawnEvent {
 			return;
 		}
 		if (!NearConduitSpawnEvent.onEntitySpawn(entity, (ServerLevel) level, null, e.getSpawnType())) {
+			System.out.println("Cancelling spawn: " + entity.getName());
 			e.setSpawnCancelled(true);
 			e.setCanceled(true);
 		}

@@ -1,6 +1,5 @@
-package com.natamus.conduitspreventdrowned.events;
+package com.ethamorim.conduitpower.event;
 
-import com.natamus.conduitspreventdrowned.config.ConfigHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -20,7 +19,7 @@ public class NearConduitSpawnEvent {
 		}
 		
 		BlockPos ePos = entity.blockPosition();
-		int r = ConfigHandler.preventDrownedInRange;
+		int r = 400;
 		
 		for (Player player : world.players()) {
 			BlockPos playerPos = BlockPos.containing(player.getX(), 1, player.getZ());

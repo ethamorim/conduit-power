@@ -18,5 +18,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'Conduits-Prevent-Drowned-1,20,1'
-include("Common", "Forge")
+rootProject.name = 'Conduit Power - 1.20.1'
+include("Forge")
